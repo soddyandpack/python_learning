@@ -1,0 +1,18 @@
+import pandas as pd
+import numpy as np
+data = np.random.randint(1,22,(5,3))
+df = pd.DataFrame(data,columns=list('甲乙丙'))
+print(df)
+df.to_csv("example.csv")
+# 讀入csv
+df_load = pd.read_csv("example.csv")
+print(df_load)
+
+# 重新來一次
+df_load2 = pd.read_csv("example.csv",index_col=0)
+print(df_load2)
+# https://www.youtube.com/user/iyenlung/videos 蔡炎龍
+# https://www.youtube.com/watch?v=zY4doF6xSxY  How do I sort a pandas DataFrame or a Series?
+# https://www.learnpython.org/   
+# https://docs.python.org/3/library/random.html  python library
+ 
