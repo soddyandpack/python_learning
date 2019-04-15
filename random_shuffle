@@ -1,0 +1,33 @@
+
+import random
+# data1=random.choice([1,23,56,3,12,4,11])
+# # 一次隨機選列表中三個
+
+# data2=random.sample(range(1,44),10)
+# print(data2)
+# print("------------------------")
+# print(data2)
+
+data3=list(range(44))
+random.shuffle(data3)
+#為何不能使用range()這種列表資料 因為range 是一種不能修改內容的tuple
+#  洗牌的概念
+# print(data3)
+for kk in range(15):
+    if data3[kk]!=0:
+        print("Order:",kk+1,"th --->","No.:",data3[kk],"\t")
+
+# data4=random.uniform(31,41)
+# print(data4)
+
+
+# 服從平均數100,標準差10的常態分配而產出的數據資料
+# data5=random.normalvariate(100,10)
+# print(data5)
+#統計模組
+# import statistics as stat
+# data6=stat.mean(range(1,4))
+# print(data6)
+
+# data7=stat.stdev(range(1,4))
+# print(data7)
