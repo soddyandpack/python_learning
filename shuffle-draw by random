@@ -1,0 +1,9 @@
+import random 
+#Web compile:   https://www.python.org/ 
+data3=list(range(44))
+random.shuffle(data3)
+# 洗牌的概念
+# print(data3)
+for kk in range(15):
+    if data3[kk]!=0:
+        print("Order:",kk+1,"th --->","No.:",data3[kk],"\t")
